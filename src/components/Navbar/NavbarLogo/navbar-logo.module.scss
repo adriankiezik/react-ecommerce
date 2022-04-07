@@ -1,0 +1,13 @@
+.logo {
+  filter: brightness(0) invert(1);
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: auto;
+  }
+  &__title {
+    color: white;
+    font-weight: 600;
+  }
+}
