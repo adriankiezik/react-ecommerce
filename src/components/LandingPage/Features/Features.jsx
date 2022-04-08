@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./featured.module.scss";
+import styles from "./features.module.scss";
 
 import Button from "../../Button/Button";
 
-const Featured = () => {
+const Features = () => {
   return (
     <div className={styles["featured"]}>
       <div className={styles["featured__section"]}>
@@ -51,4 +51,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default Features;
