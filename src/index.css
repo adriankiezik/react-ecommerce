@@ -16,4 +16,7 @@ body {
 
 :root {
   --color-orange-light: #fff3df;
+  --color-gray-light: #f6f6f6;
+
+  --content-padding: 12vw;
 }

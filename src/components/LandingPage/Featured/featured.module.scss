@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 2rem;
-  padding: 4.5rem 5vw;
+  padding: 4.5rem var(--content-padding);
   &__section {
     position: relative;
     height: 375px;

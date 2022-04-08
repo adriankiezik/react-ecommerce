@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./header.module.scss";
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import { FaShippingFast } from "react-icons/fa";
+import { MdOutlineDeliveryDining } from "react-icons/md";
 import { MdOutlineSentimentVerySatisfied } from "react-icons/md";
-import { SiAdguard } from "react-icons/si";
+import { BsShieldCheck } from "react-icons/bs";
 
 const buttonStyle = { fontSize: "2.2em", color: "gold" };
 const featureIconStyle = { fontSize: "1.3em", color: "orange" };
@@ -25,7 +25,7 @@ const Header = () => {
       <div className={styles["features"]}>
         <div className={styles["features__feature"]}>
           <div className={styles["features__icon"]}>
-            <FaShippingFast style={featureIconStyle} />
+            <MdOutlineDeliveryDining style={featureIconStyle} />
           </div>
           <div>
             <h3 className={styles["features__title"]}>Free shipping</h3>
@@ -49,7 +49,7 @@ const Header = () => {
         </div>
         <div className={styles["features__feature"]}>
           <div className={styles["features__icon"]}>
-            <SiAdguard style={featureIconStyle} />
+            <BsShieldCheck style={featureIconStyle} />
           </div>
           <div>
             <h3 className={styles["features__title"]}>
