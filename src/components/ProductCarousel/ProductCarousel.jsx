@@ -7,7 +7,7 @@ import Product from "./Product/Product";
 
 const ProductCarousel = () => {
   return (
-    <Swiper slidesPerView={4.5} loop={true} centeredSlides={true}>
+    <Swiper slidesPerView={5.7} loop={true} centeredSlides={true}>
       <SwiperSlide>
         <Product
           image="/assets/product-1.jpg"
