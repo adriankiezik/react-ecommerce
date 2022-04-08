@@ -2,12 +2,14 @@ import React from "react";
 import styles from "./landing-page.module.scss";
 
 import Header from "../../components/LandingPage/Header/Header";
+import Featured from "../../components/LandingPage/Featured/Featured";
 
 const LandingPage = () => {
   return (
-    <div>
+    <main>
       <Header />
-    </div>
+      <Featured />
+    </main>
   );
 };
 
