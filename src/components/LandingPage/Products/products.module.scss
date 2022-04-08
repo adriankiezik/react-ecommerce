@@ -1,0 +1,13 @@
+.products {
+  margin-bottom: 150px;
+  &__titlebar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--content-padding);
+    margin-bottom: 65px;
+  }
+  &__title {
+    font-size: 1.8em;
+    font-weight: 300;
+  }
+}
