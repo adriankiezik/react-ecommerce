@@ -1,0 +1,13 @@
+.input {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  padding: 0.95rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-family: "Poppins", sans-serif;
+  }
+}
