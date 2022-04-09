@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useState } from "react";
 import styles from "./navbar.module.scss";
 
-import NavbarLogo from "./NavbarLogo/NavbarLogo";
+import Logo from "../Logo/Logo";
 import NavbarLinks from "./NavbarLinks/NavbarLinks";
 import NavbarMenu from "./NavbarMenu/NavbarMenu";
 
@@ -29,7 +29,7 @@ const Navbar = () => {
           : styles["navbar"]
       }
     >
-      <NavbarLogo scrolled={scrolled} />
+      <Logo black={scrolled} />
       <NavbarLinks scrolled={scrolled} />
       <NavbarMenu scrolled={scrolled} />
     </div>

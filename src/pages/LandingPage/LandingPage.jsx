@@ -6,6 +6,7 @@ import Features from "../../components/LandingPage/Features/Features";
 import Advantages from "../../components/LandingPage/Advantages/Advantages";
 import Products from "../../components/LandingPage/Products/Products";
 import Newsletter from "../../components/LandingPage/Newsletter/Newsletter";
+import Footer from "../../components/Footer/Footer";
 
 const LandingPage = () => {
   return (
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <Advantages />
       <Products />
       <Newsletter />
+      <Footer />
     </main>
   );
 };

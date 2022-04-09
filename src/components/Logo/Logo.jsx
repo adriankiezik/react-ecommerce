@@ -1,21 +1,21 @@
 import React from "react";
-import styles from "./navbar-logo.module.scss";
+import styles from "./logo.module.scss";
 
-const NavbarLogo = (props) => {
+const Logo = (props) => {
   return (
     <div className={styles["logo__container"]}>
       <img
         src="/assets/logo.svg"
         alt="logo"
         className={
-          props.scrolled
+          props.black
             ? styles["logo"] + " " + styles["logo--black"]
             : styles["logo"]
         }
       />
       <p
         className={
-          props.scrolled
+          props.black
             ? styles["logo__title"] + " " + styles["logo__title--black"]
             : styles["logo__title"]
         }
@@ -26,4 +26,4 @@ const NavbarLogo = (props) => {
   );
 };
 
-export default NavbarLogo;
+export default Logo;

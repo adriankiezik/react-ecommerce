@@ -1,0 +1,29 @@
+.footer {
+  width: 100%;
+  padding: 0 var(--content-padding);
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  margin-bottom: 60px;
+  &__list {
+    list-style: none;
+    font-size: 0.9em;
+    & > li {
+      margin-bottom: 0.5em;
+    }
+  }
+  &__title {
+    font-size: 0.9em;
+    margin-bottom: 1.75em;
+  }
+  &__subtitle {
+    font-size: 0.8em;
+    line-height: 175%;
+    color: gray;
+  }
+  &__logo {
+    margin-bottom: 1.5rem;
+  }
+  &__padding {
+    padding-right: 35%;
+  }
+}
