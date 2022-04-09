@@ -3,6 +3,14 @@ import styles from "./footer.module.scss";
 
 import Logo from "../Logo/Logo";
 
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
+const iconStyle = { fontSize: "1.2rem", color: "gray" };
+
 const Footer = () => {
   return (
     <div className={styles["footer"]}>
@@ -14,6 +22,13 @@ const Footer = () => {
           E-Shop has clothing for the young, the old & everyone in between
           &#8211; but most importantly, for the fashionable.
         </p>
+        <div className={styles["footer__social-media"]}>
+          <FaFacebookF style={iconStyle} />
+          <FaTwitter style={iconStyle} />
+          <FaLinkedinIn style={iconStyle} />
+          <FaInstagram style={iconStyle} />
+          <FaYoutube style={iconStyle} />
+        </div>
       </div>
       <div>
         <h4 className={styles["footer__title"]}>Shopping online</h4>
