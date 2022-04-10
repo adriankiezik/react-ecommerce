@@ -1,12 +1,33 @@
+@import "../../../breakpoints.scss";
+
 .featured {
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 2rem;
   padding: 4.5rem var(--content-padding);
+  @include breakpoint-down(lg) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
   &__section {
     position: relative;
     height: 375px;
+    &--1 {
+      @include breakpoint-down(lg) {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+    }
+    &--2 {
+      @include breakpoint-down(lg) {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+    }
+    &--3 {
+      @include breakpoint-down(lg) {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+    }
   }
   &__image {
     position: absolute;

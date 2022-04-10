@@ -6,7 +6,11 @@ import Button from "../../Button/Button";
 const Features = () => {
   return (
     <div className={styles["featured"]}>
-      <div className={styles["featured__section"]}>
+      <div
+        className={
+          styles["featured__section"] + " " + styles["featured__section--1"]
+        }
+      >
         <div
           className={
             styles["featured__image"] + " " + styles["featured__image--1"]
@@ -21,7 +25,11 @@ const Features = () => {
           </div>
         </div>
       </div>
-      <div className={styles["featured__section"]}>
+      <div
+        className={
+          styles["featured__section"] + " " + styles["featured__section--2"]
+        }
+      >
         <div
           className={
             styles["featured__image"] + " " + styles["featured__image--2"]
@@ -34,7 +42,11 @@ const Features = () => {
           </div>
         </div>
       </div>
-      <div className={styles["featured__section"]}>
+      <div
+        className={
+          styles["featured__section"] + " " + styles["featured__section--3"]
+        }
+      >
         <div
           className={
             styles["featured__image"] + " " + styles["featured__image--3"]

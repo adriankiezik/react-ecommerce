@@ -1,9 +1,15 @@
+@import "../../../breakpoints.scss";
+
 .product {
   &__image {
     width: 271px;
     height: 385px;
     object-position: top center;
     object-fit: cover;
+    @include breakpoint-down(md) {
+      width: 190px;
+      height: 270px;
+    }
   }
   &__title {
     font-size: 1em;

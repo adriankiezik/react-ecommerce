@@ -1,3 +1,5 @@
+@import "../../../breakpoints.scss";
+
 .header {
   position: relative;
   height: 90vh;
@@ -6,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding-left: var(--content-padding);
+  padding-left: 12vw;
   overflow: hidden;
   &__image {
     position: absolute;
@@ -37,6 +39,13 @@
 }
 
 .features {
+  @include breakpoint-down(lg) {
+    width: 100%;
+    border-radius: 0;
+  }
+  @include breakpoint-down(md) {
+    display: none;
+  }
   display: grid;
   position: absolute;
   bottom: 0;
@@ -63,6 +72,7 @@
   }
   &__icon {
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
     width: 39px;

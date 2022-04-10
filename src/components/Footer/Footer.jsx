@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <div className={styles["footer"]}>
       <motion.div
-        className={styles["footer__padding"]}
+        className={styles["footer__column"] + " " + styles["footer__column--1"]}
         initial={{ x: -30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
@@ -38,6 +38,7 @@ const Footer = () => {
         </div>
       </motion.div>
       <motion.div
+        className={styles["footer__column"] + " " + styles["footer__column--2"]}
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
@@ -53,6 +54,7 @@ const Footer = () => {
         </ul>
       </motion.div>
       <motion.div
+        className={styles["footer__column"] + " " + styles["footer__column--3"]}
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
@@ -68,6 +70,7 @@ const Footer = () => {
         </ul>
       </motion.div>
       <motion.div
+        className={styles["footer__column"] + " " + styles["footer__column--4"]}
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
