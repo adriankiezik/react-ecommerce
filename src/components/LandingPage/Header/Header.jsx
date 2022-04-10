@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./header.module.scss";
+import { motion } from "framer-motion";
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { MdOutlineDeliveryDining } from "react-icons/md";
@@ -12,16 +13,34 @@ const featureIconStyle = { fontSize: "1.3em", color: "orange" };
 const Header = () => {
   return (
     <div className={styles["header"]}>
-      <div className={styles["header__image"]}></div>
-      <h1 className={styles["header__title"]}>
+      <motion.div
+        className={styles["header__image"]}
+        initial={{ scale: 1.1 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 1.25 }}
+        viewport={{ once: true }}
+      ></motion.div>
+      <motion.h1
+        className={styles["header__title"]}
+        initial={{ x: 30, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         Sale of the <br />
         summer <br />
         collection
-      </h1>
-      <div className={styles["header__button"]}>
+      </motion.h1>
+      <motion.div
+        className={styles["header__button"]}
+        initial={{ x: 30, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <BsFillArrowRightCircleFill style={buttonStyle} />
         <p>Shop now</p>
-      </div>
+      </motion.div>
       <div className={styles["features"]}>
         <div className={styles["features__feature"]}>
           <div className={styles["features__icon"]}>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./footer.module.scss";
+import { motion } from "framer-motion";
 
 import Logo from "../Logo/Logo";
 
@@ -14,7 +15,13 @@ const iconStyle = { fontSize: "1.2rem", color: "gray" };
 const Footer = () => {
   return (
     <div className={styles["footer"]}>
-      <div className={styles["footer__padding"]}>
+      <motion.div
+        className={styles["footer__padding"]}
+        initial={{ x: -30, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <div className={styles["footer__logo"]}>
           <Logo black={true} />
         </div>
@@ -29,8 +36,13 @@ const Footer = () => {
           <FaInstagram style={iconStyle} />
           <FaYoutube style={iconStyle} />
         </div>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <h4 className={styles["footer__title"]}>Shopping online</h4>
         <ul className={styles["footer__list"]}>
           <li>Order status</li>
@@ -39,8 +51,13 @@ const Footer = () => {
           <li>Payment options</li>
           <li>Contact us</li>
         </ul>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <h4 className={styles["footer__title"]}>Information</h4>
         <ul className={styles["footer__list"]}>
           <li>Gift cards</li>
@@ -49,14 +66,19 @@ const Footer = () => {
           <li>Become a member</li>
           <li>Site feedback</li>
         </ul>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <h4 className={styles["footer__title"]}>Contact</h4>
         <ul className={styles["footer__list"]}>
           <li>kiezikadrian@gmail.com</li>
           <li>Hotline: +1 131 138 138</li>
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 };

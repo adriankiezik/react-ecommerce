@@ -1,12 +1,19 @@
 import React from "react";
 import styles from "./newsletter.module.scss";
+import { motion } from "framer-motion";
 
 import Button from "../../Button/Button";
 import Input from "../../Input/Input";
 
 const Newsletter = () => {
   return (
-    <div className={styles["newsletter"]}>
+    <motion.div
+      className={styles["newsletter"]}
+      initial={{ y: 30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+    >
       <img
         src="/assets/newsletter.jpg"
         alt="newsletter"
@@ -23,7 +30,7 @@ const Newsletter = () => {
           <Button text="SUBSCRIBE" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
