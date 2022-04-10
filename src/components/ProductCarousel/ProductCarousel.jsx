@@ -12,6 +12,9 @@ const ProductCarousel = () => {
       loop={true}
       centeredSlides={true}
       breakpoints={{
+        350: {
+          slidesPerView: 1.7,
+        },
         400: {
           slidesPerView: 1.9,
         },

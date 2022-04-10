@@ -5,6 +5,9 @@
     align-items: center;
     gap: 1rem;
     margin-right: auto;
+    &--standalone {
+      margin-right: 0;
+    }
   }
   &__title {
     color: white;

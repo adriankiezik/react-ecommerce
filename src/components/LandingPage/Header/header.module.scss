@@ -28,6 +28,9 @@
     font-size: 4em;
     font-weight: 600;
     line-height: 1.2em;
+    @include breakpoint-down(sm) {
+      font-size: 3.2em;
+    }
   }
   &__button {
     font-size: 1.1em;

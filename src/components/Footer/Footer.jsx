@@ -23,7 +23,7 @@ const Footer = () => {
         viewport={{ once: true }}
       >
         <div className={styles["footer__logo"]}>
-          <Logo black={true} />
+          <Logo black={true} standalone={true} />
         </div>
         <p className={styles["footer__subtitle"]}>
           E-Shop has clothing for the young, the old & everyone in between

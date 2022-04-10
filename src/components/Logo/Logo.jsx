@@ -3,7 +3,15 @@ import styles from "./logo.module.scss";
 
 const Logo = (props) => {
   return (
-    <div className={styles["logo__container"]}>
+    <div
+      className={
+        props.standalone
+          ? styles["logo__container"] +
+            " " +
+            styles["logo__container--standalone"]
+          : styles["logo__container"]
+      }
+    >
       <img
         src="/assets/logo.svg"
         alt="logo"
