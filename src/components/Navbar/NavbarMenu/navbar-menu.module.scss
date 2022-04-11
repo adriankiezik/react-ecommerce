@@ -1,3 +1,15 @@
+@import "../../../breakpoints.scss";
+
 .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
   margin-left: auto;
+  &--mobile {
+    display: none;
+    @include breakpoint-down(lg) {
+      display: block;
+    }
+  }
 }
