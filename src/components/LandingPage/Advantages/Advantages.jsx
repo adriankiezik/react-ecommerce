@@ -21,14 +21,13 @@ const Advantages = () => {
       >
         Why should you choose us?
       </motion.h1>
-      <motion.div
-        className={styles["advantages"]}
-        initial={{ y: 30, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
-        <div>
+      <div className={styles["advantages"]}>
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           <div className={styles["advantages__icon"]}>
             <MdOutlineDeliveryDining style={iconStyle} />
           </div>
@@ -37,8 +36,13 @@ const Advantages = () => {
             All purchases over $199 are eligible for free shipping via USPS
             First Class Mail.
           </p>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           <div className={styles["advantages__icon"]}>
             <MdPayment style={iconStyle} />
           </div>
@@ -46,8 +50,13 @@ const Advantages = () => {
           <p className={styles["advantages__text"]}>
             All payments are processed instantly over a secure payment protocol.
           </p>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           <div className={styles["advantages__icon"]}>
             <BsShieldCheck style={iconStyle} />
           </div>
@@ -58,7 +67,7 @@ const Advantages = () => {
             If an item arrived damaged or you've changed your mind, you can send
             it back for a full refund.
           </p>
-        </div>
+        </motion.div>
         <div>
           <div className={styles["advantages__icon"]}>
             <MdOutlineHighQuality style={iconStyle} />
@@ -69,7 +78,7 @@ const Advantages = () => {
             finest materials.
           </p>
         </div>
-      </motion.div>
+      </div>
     </Fragment>
   );
 };

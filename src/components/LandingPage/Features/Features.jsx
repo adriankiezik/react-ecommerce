@@ -1,15 +1,20 @@
 import React from "react";
 import styles from "./features.module.scss";
+import { motion } from "framer-motion";
 
 import Button from "../../Button/Button";
 
 const Features = () => {
   return (
     <div className={styles["featured"]}>
-      <div
+      <motion.div
         className={
           styles["featured__section"] + " " + styles["featured__section--1"]
         }
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         <div
           className={
@@ -24,11 +29,15 @@ const Features = () => {
             <Button text="SHOW COLLECTION" />
           </div>
         </div>
-      </div>
-      <div
+      </motion.div>
+      <motion.div
         className={
           styles["featured__section"] + " " + styles["featured__section--2"]
         }
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         <div
           className={
@@ -41,11 +50,15 @@ const Features = () => {
             <Button text="MORE DETAILS" />
           </div>
         </div>
-      </div>
-      <div
+      </motion.div>
+      <motion.div
         className={
           styles["featured__section"] + " " + styles["featured__section--3"]
         }
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         <div
           className={
@@ -58,7 +71,7 @@ const Features = () => {
             <Button text="VIEW ALL" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
