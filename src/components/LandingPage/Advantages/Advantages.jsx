@@ -68,7 +68,12 @@ const Advantages = () => {
             it back for a full refund.
           </p>
         </motion.div>
-        <div>
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           <div className={styles["advantages__icon"]}>
             <MdOutlineHighQuality style={iconStyle} />
           </div>
@@ -77,7 +82,7 @@ const Advantages = () => {
             Designed to last, each of our products has been crafted with the
             finest materials.
           </p>
-        </div>
+        </motion.div>
       </div>
     </Fragment>
   );
