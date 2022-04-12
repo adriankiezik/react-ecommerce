@@ -5,6 +5,7 @@
   background-color: white;
   padding: 1em 2em;
   border-radius: 100px;
+  cursor: pointer;
   @include breakpoint-down(md) {
     font-size: 0.8em;
   }

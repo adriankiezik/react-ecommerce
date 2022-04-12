@@ -22,19 +22,31 @@ const Footer = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <div className={styles["footer__logo"]}>
-          <Logo black={true} standalone={true} />
-        </div>
+        <a href="#">
+          <div className={styles["footer__logo"]}>
+            <Logo black={true} standalone={true} />
+          </div>
+        </a>
         <p className={styles["footer__subtitle"]}>
           E-Shop has clothing for the young, the old & everyone in between
           &#8211; but most importantly, for the fashionable.
         </p>
         <div className={styles["footer__social-media"]}>
-          <FaFacebookF style={iconStyle} />
-          <FaTwitter style={iconStyle} />
-          <FaLinkedinIn style={iconStyle} />
-          <FaInstagram style={iconStyle} />
-          <FaYoutube style={iconStyle} />
+          <a href="#">
+            <FaFacebookF style={iconStyle} />
+          </a>
+          <a href="#">
+            <FaTwitter style={iconStyle} />
+          </a>
+          <a href="#">
+            <FaLinkedinIn style={iconStyle} />
+          </a>
+          <a href="#">
+            <FaInstagram style={iconStyle} />
+          </a>
+          <a href="#">
+            <FaYoutube style={iconStyle} />
+          </a>
         </div>
       </motion.div>
       <motion.div
@@ -46,11 +58,21 @@ const Footer = () => {
       >
         <h4 className={styles["footer__title"]}>Shopping online</h4>
         <ul className={styles["footer__list"]}>
-          <li>Order status</li>
-          <li>Shipping and delivery</li>
-          <li>Returns</li>
-          <li>Payment options</li>
-          <li>Contact us</li>
+          <li>
+            <a href="#">Order status</a>
+          </li>
+          <li>
+            <a href="#">Shipping and delivery</a>
+          </li>
+          <li>
+            <a href="#">Returns</a>
+          </li>
+          <li>
+            <a href="#">Payment options</a>
+          </li>
+          <li>
+            <a href="#">Contact us</a>
+          </li>
         </ul>
       </motion.div>
       <motion.div
@@ -62,11 +84,21 @@ const Footer = () => {
       >
         <h4 className={styles["footer__title"]}>Information</h4>
         <ul className={styles["footer__list"]}>
-          <li>Gift cards</li>
-          <li>Find a store</li>
-          <li>Newsletter</li>
-          <li>Become a member</li>
-          <li>Site feedback</li>
+          <li>
+            <a href="#">Gift cards</a>
+          </li>
+          <li>
+            <a href="#">Find a store</a>
+          </li>
+          <li>
+            <a href="#">Newsletter</a>
+          </li>
+          <li>
+            <a href="#">Become a member</a>
+          </li>
+          <li>
+            <a href="#">Site feedback</a>
+          </li>
         </ul>
       </motion.div>
       <motion.div

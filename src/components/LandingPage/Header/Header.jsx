@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./header.module.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { MdOutlineDeliveryDining } from "react-icons/md";
@@ -39,7 +40,9 @@ const Header = () => {
         viewport={{ once: true }}
       >
         <BsFillArrowRightCircleFill style={buttonStyle} />
-        <p>Shop now</p>
+        <Link to="/" style={{ color: "white" }}>
+          Shop now
+        </Link>
       </motion.div>
       <div className={styles["features"]}>
         <div className={styles["features__feature"]}>

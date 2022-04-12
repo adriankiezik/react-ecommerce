@@ -32,3 +32,10 @@ body {
     --content-padding: 3vw;
   }
 }
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: var(--color-black);
+  }
+}
