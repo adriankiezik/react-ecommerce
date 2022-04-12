@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./products.module.scss";
 import { motion } from "framer-motion";
 
-import Button from "../../Button/Button";
-import ProductCarousel from "../../ProductCarousel/ProductCarousel";
+import Button from "../../../components/Button/Button";
+import ProductCarousel from "../../../components/ProductCarousel/ProductCarousel";
 
 const Products = () => {
   return (

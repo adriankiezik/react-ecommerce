@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./newsletter.module.scss";
 import { motion } from "framer-motion";
 
-import Button from "../../Button/Button";
-import Input from "../../Input/Input";
+import Button from "../../../components/Button/Button";
+import Input from "../../../components/Input/Input";
 
 const Newsletter = () => {
   return (

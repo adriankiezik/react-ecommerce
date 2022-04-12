@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./features.module.scss";
 import { motion } from "framer-motion";
 
-import Button from "../../Button/Button";
+import Button from "../../../components/Button/Button";
 
 const Features = () => {
   return (
